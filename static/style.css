@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+button {
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* News card styling */
+.news-cards {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #f3f4f6;
+  padding: 1rem;
+  border-left: 5px solid #4f46e5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.card small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}

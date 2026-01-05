@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake News Generator & Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>📰 Fake News Generator & Detector</h1>
+
+    <section class="generator">
+      <h2>🧠 Generate Fake Headline</h2>
+      <input type="text" id="seedText" placeholder="Enter a topic..." />
+      <button onclick="generateHeadline()">Generate</button>
+      <p id="generatedHeadline"></p>
+    </section>
+
+    <hr />
+
+    <section class="detector">
+      <h2>🕵️‍♂️ Detect Real or Fake (Headline)</h2>
+      <input type="text" id="headlineText" placeholder="Enter a headline to classify..." />
+      <button onclick="classifyHeadline()">Classify</button>
+      <p id="classificationResult"></p>
+    </section>
+
+    <hr />
+
+    <section class="news">
+      <h2>🌐 Live News </h2>
+      <input type="text" id="newsQuery" placeholder="Search topic (e.g. politics, sports)..." />
+      <button onclick="fetchNews()">Fetch News</button>
+      <div id="newsResults" class="news-cards"></div>
+    </section>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
